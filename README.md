@@ -2,9 +2,16 @@
 
 DEX is the official wallet software designed with mass adoption in mind. It allows to access your account, handle financial operations, issue tokens, and trade on DEX.
 
-## Changes for CORS Issue
+## Changes made to original code due to CORS Issue 
 
-```options.credentials = 'omit';```
+```
+File Location: ./data-service/utils/request.ts
+options.credentials = 'omit';
+
+File Location: ./src/modules/app/services/User.js
+const response = await ds.fetch(`${ds.config.get('node')}/addresses/scriptInfo/${address}`, {credentials: "omit"});
+
+```
 
 ## For developers
 
@@ -16,8 +23,8 @@ yarn: 1.22.7 (window pc)
 ```
 
 ```
-npm i
-npm run server
+npm i (avoid using npm install)
+npm run server (avoid using npm run)
 ```
 
 The server will be launched at [https://localhost:8080](https://localhost:8080).
