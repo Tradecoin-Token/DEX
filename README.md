@@ -1,5 +1,20 @@
 # Waves DEX
 
+🧰 Step-by-step: Install Node.js v16.20.x + npm 8.x on Ubuntu/Debian
+Add the NodeSource repo for Node.js 16.x
+
+curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+
+apt install -y nodejs
+
+node -v    # Should be v16.20.x or similar
+
+npm -v     # Should be 8.x
+
+npm install -g yarn@1.22.17
+
+yarn --version    # Should be 1.22.17
+
 [**Website**](https://wavesplatform.com/) | [**Discord**](https://discord.gg/cnFmDyA) | [**Forum**](https://forum.wavesplatform.com/) | [**Support**](https://support.wavesplatform.com/) | [**Documentation**](https://docs.wavesplatform.com)
 
 [![Waves App Promo](https://raw.githubusercontent.com/wavesplatform/WavesGUI/dev/README_IMG_01.png)](https://wavesplatform.com/product)
